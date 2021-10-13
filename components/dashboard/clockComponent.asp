@@ -4,6 +4,6 @@
         <p><% call writeCurrentTime() %></p>
     </div>
     <div class="card-action center">
-        <button class="teal btn-floating waves-effect waves-light" onclick="window.location.reload()"><i class="material-icons">restart_alt</i></button>
+        <button class="teal btn-small btn-floating waves-effect waves-light" onclick="window.location.reload()"><i class="material-icons">restart_alt</i></button>
     </div>
 </div>
