@@ -5,3 +5,11 @@
 .underline{
     text-decoration:underline;
 }
+
+.carousel{
+    height:500px !important;
+}
+
+.carousel img{
+    opacity:0.75;
+}
