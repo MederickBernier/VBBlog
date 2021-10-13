@@ -15,6 +15,9 @@
             <li><a href="currentTime.asp" class="white-text">Current Time</a></li>
             <li><a href="randomString.asp" class="white-text">Random String Generator</a></li>
             <% If Session("isActive") then %>
+                <li><a href="dashboard.asp" class="white-text">Dashboard</a></li>
+            <% End If %>
+            <% If Session("isActive") then %>
                 <li><a href="logout.asp" class="white-text">Logout</a></li>
             <% Else %>
                 <li><a href="loginForm.asp" class="white-text">Login</a></li>
