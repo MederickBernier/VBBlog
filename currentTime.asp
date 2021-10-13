@@ -1,6 +1,5 @@
 <%
     Title = "Current Time"
-    Logo = "CT"
 %>
 <!--#include file=includes/header.asp-->
         <div class="container">

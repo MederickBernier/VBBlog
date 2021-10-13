@@ -1,6 +1,5 @@
 <%
     Title = "Random String Generator"
-    Logo = "RSG"
 
     If(request.querystring("letters") = Empty) then
         Letters = 2

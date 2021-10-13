@@ -1,6 +1,5 @@
 <%
     Title = "Classic ASP"
-    Logo = "CA"
 %>
 <!--#include file=includes/header.asp-->
 <% If Session("isActive") Then %>

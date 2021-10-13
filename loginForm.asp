@@ -1,6 +1,5 @@
 <%
     Title = "Login Form"
-    Logo = "LF"
 %>
 <!--#include file=includes/header.asp-->
         <div class="container">

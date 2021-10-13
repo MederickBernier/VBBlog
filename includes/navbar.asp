@@ -3,7 +3,7 @@
         <a href="default.asp" class="brand-logo white-text">
              &nbsp;<%
                 If Logo = Empty then
-                    Response.Write("Logo")
+                    Response.Write("VBBlog")
                 Else
                     Response.Write(Logo)
                 End If

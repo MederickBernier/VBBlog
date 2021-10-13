@@ -1,6 +1,5 @@
 <%
     Title = "Dashboard - Classic ASP"
-    Logo = "DB"
 
     If NOT(sessionActive()) Then
         Response.Redirect "default.asp"
