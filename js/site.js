@@ -18,8 +18,8 @@ function autoplay(){
 
 $(document).ready(function(){
     $('.sidenav').sidenav();
-    $('.carousel.carousel-slider').carousel({
-        fullWidth: true,
+    $('.carousel').carousel({
+        full_width: true,
         indicators: true,
         duration: 100,
     });
@@ -28,6 +28,6 @@ $(document).ready(function(){
 autoplay();
 
 function autoplay(){
-    $('.carousel.carousel-slider').carousel('next');
+    $('.carousel').carousel('next');
     setTimeout(autoplay, 4500);
 }

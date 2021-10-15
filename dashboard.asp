@@ -11,7 +11,7 @@
             <!-- Might use component based programming for the dashboard since it can have a lot of little things -->
             <div class="row">
                 <div class="col s3 m3 l3">
-                    <!--#include file=components/dashboard/clockComponent.asp-->
+                    <!--#include file=components/clock/clock.asp-->
                 </div>
         </div>
     </main>

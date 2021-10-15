@@ -35,4 +35,17 @@ Function sessionActive()
         sessionActive = False
     End If
 end Function
+
+'this section will contain the functions and procedures concerning the component based system that i'm working on.'
+
+Sub GetComponents()
+    ' use last modified date to check if the folder has to be reloaded in the session with the new components, if it's not the current day then just keep rollin.
+    Dim FileSystemObject, FolderObject, SubFolder, ComponentsArray
+    Set FileSystemObject = Server.CreateObject("Scripting.FileSystemObject")
+    Set FolderObject = FileSystemObject.GetFolder(Server.MapPath("/components")
+
+    For Each subFolder in FolderObject.Files
+
+end Sub
+
 %>
