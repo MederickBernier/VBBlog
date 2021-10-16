@@ -13,6 +13,9 @@
                 <div class="col s3 m3 l3">
                     <% Response.Write((New Clock).Render) %>
                 </div>
+                <div class="col s3 m3 l3">
+                    <% Response.Write((New Lorem).Render) %>
+                </div>
         </div>
     </main>
 <!--#include file=includes/dashboard/footer.asp-->
