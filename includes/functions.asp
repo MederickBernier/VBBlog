@@ -42,31 +42,4 @@ Function sessionActive()
         sessionActive = False
     End If
 end Function
-
-'this section will contain the functions and procedures concerning the component based system that i'm working on.'
-
-Function ComponentExists(componentName)
-    Dim fs, componentPath
-    set fs = Server.CreateObject("Scripting.FileSystemObject")
-    componentPath = Server.MapPath("/components/"&componentName&"/")
-
-    If(fs.FolderExists(componentPath)) = true Then
-        ComponentExists = True
-    Else
-        ComponentExists = False
-    End If
-End Function
-
-Sub Component(componentName)
-    Dim includePath
-
-
-    If ComponentExists(componentName) = True Then
-        includePath = "components/"&componentName&"/"&componentName&".asp"
-        Response.write("<!--#include virtual="&includePath&"-->")
-    Else
-        Response.Write("The Component couldn't be found")
-    End If
-End Sub
-
 %>
