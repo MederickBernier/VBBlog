@@ -48,7 +48,7 @@ end Function
 Function ComponentExists(componentName)
     Dim fs, componentPath
     set fs = Server.CreateObject("Scripting.FileSystemObject")
-    set componentPath = returnWithDoubleQuotes("/components/"&componentName)
+    componentPath = Server.MapPath("/components/"&componentName&"/")
 
     If(fs.FolderExists(componentPath)) = true Then
         ComponentExists = True
@@ -60,9 +60,10 @@ End Function
 Sub Component(componentName)
     Dim includePath
 
+
     If ComponentExists(componentName) = True Then
-        set includePath = returnWithDoubleQuotes("components/"&componentName&".asp")
-        Response.write("<!--#include file="&includePath&"-->")
+        includePath = "components/"&componentName&"/"&componentName&".asp"
+        Response.write("<!--#include virtual="&includePath&"-->")
     Else
         Response.Write("The Component couldn't be found")
     End If
