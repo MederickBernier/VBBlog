@@ -11,10 +11,10 @@
             <!-- Might use component based programming for the dashboard since it can have a lot of little things -->
             <div class="row">
                 <div class="col s3 m3 l3">
-                    <% Response.Write((New Clock).Render) %>
+                    <% Server.Execute((New Clock).Render) %>
                 </div>
                 <div class="col s3 m3 l3">
-                    <% Response.Write((New Lorem).Render) %>
+                    <% Server.Execute((New Lorem).Render) %>
                 </div>
         </div>
     </main>
